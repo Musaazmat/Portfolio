@@ -53,7 +53,7 @@ function sendMail(event) {
   // Send email
   emailjs.send(serviceID, templateID, params)
     .then(res => {
-      alert("Email submitted successfully");
+      alert("Your message has been sent successfully.");
       // Optionally clear the form
       document.querySelector("#from_name").value = '';
       document.querySelector("#from_email").value = '';
@@ -61,6 +61,6 @@ function sendMail(event) {
     })
     .catch(err => {
       console.error("Failed to send email:", err);
-      alert("Failed to send email. Please try again.");
+      alert("Oops! Something went wrong. Please try again");
     });
 }
