@@ -47,8 +47,8 @@ function sendMail(event) {
     message: document.querySelector("#message").value,
   };
 
-  const serviceID = "service_ch3cdet"; // Email service ID
-  const templateID = "template_0c0ue9e"; // Email template ID
+  const serviceID = "service_45vE0o"; // Email service ID
+  const templateID = "template_6c1ue5e"; // Email template ID
 
   // Send email
   emailjs.send(serviceID, templateID, params)
